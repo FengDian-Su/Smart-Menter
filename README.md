@@ -11,5 +11,16 @@
 <img src = "https://github.com/FengDian-Su/Smart-Menter/blob/main/Image/Structure.png" width = "450px">
 
 ### 檔案
-
-
+| File Name                                  | Description                                                   |
+| ------------------------------------------ | --------------------------------------------------------------|
+| app.py                                     | 執行 Flask 後端程式                                            |
+| send_data.py                               | 接收來自 Arduino 傳輸的資料                                    |
+| initdb.py                                  | 初始化 mydatabase 資料庫                                       |
+| mydatabase.db                              | 儲存即時用電資料                                               |
+| fake.py                                    | 使用 fake.db 資料庫模擬運行情況                                 |
+| fake.db                                    | 隨機生成資料用於模擬和測試                                      |
+| breeze.py                                  | 使用 Breeze LLM 分析用電數據                                   |
+| llm_get_data.json                          | 將定量資料交由 LLM 分析                                        |
+| static/index.html                          | 用戶前端網頁介面                                               |
+| static/style.css                           | 網頁排版                                                      |
+| static/script.js                           | 響應事件及連接前後端資料傳輸                                    |
