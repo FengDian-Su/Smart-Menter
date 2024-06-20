@@ -8,7 +8,7 @@
 - 全端網頁：提供用戶可操作介面
 
 ### 系統架構
-![image](Image/Structure.png)
+<img src = "https://github.com/FengDian-Su/Smart-Menter/blob/main/Image/Structure.png" width = "450px">
 
 ### 檔案
 
