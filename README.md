@@ -32,7 +32,7 @@
   <img src = "https://github.com/FengDian-Su/Smart-Menter/blob/main/Image/Demo2.png" width = "450px">
 
 ## Contributer
-- [baiyenchen8](https://github.com/baiyenchen8)
+- [baiyanchen8](https://github.com/baiyanchen8)
 - [FengDian-Su](https://github.com/FengDian-Su)
 - [ChingChingKao](https://github.com/ChingChingKao)
 - 許家紳
