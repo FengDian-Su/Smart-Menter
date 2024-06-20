@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>家庭智慧電量系統</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel = "stylesheet" href = "static/style.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "titlebar">
+            <div class = "title-info">
+                <p class = "title">家庭智慧電量系統</p>
+            </div>
+            <div class = "select">
+                <div class = "date">
+                    <select class = "date-selector" id = "yyds" onchange = "selectdevice()"></select>
+                </div>
+                <div class = "unit">
+                    <select class = "unit-selector" id="dayweek" onchange = "selectrange()">
+                        <option value = "time"  selected = "selected">選擇時間</option>
+                        <option value="day">日</option>
+                        <option value="week">週</option>
+                        <option value="month">月</option>
+                        <option value="year">年</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class = "main">
+            <div>
+                <div>
+                    <box-icon name = 'money-withdraw' class = "charge-icon"></box-icon>
+                    <div id = "total" class = "total">
+                        <p class = "charge-title">本月預估電費</p>
+                        <div class = "charge-content">
+                            <p id = "charge">0</p>
+                            <p class = "charge-unit">元</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <box-icon name = 'trending-up' class = "trend-icon"></box-icon>
+                    <div id = "trend"></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <box-icon name = 'power-off' class = "power-icon"></box-icon>
+                    <div id = "realtime"></div>
+                </div>
+                <div>
+                    <box-icon name = 'plug' class = "plug-icon"></box-icon>
+                    <div id = "plug"></div>
+                </div>
+            </div>
+            <div class = "llm">
+                <p class = "llm-title" id = "llm-title">智慧用電量分析</p>
+                <div class = "llm-btn">
+                    <button onclick = "GetLLMDate('日')">日</button>
+                    <button onclick = "GetLLMDate('週')">週</button>
+                    <button onclick = "GetLLMDate('月')">月</button>
+                    <button onclick = "GetLLMDate('年')">年</button>
+                </div>
+                <div style = "display: flex">
+                    <input type = "text" id = "inputString" placeholder = "請輸入您想了解的用電資訊">
+                    <button onclick = "responseString()" class = "send-btn">Send</button>
+                </div>
+                <div class = "output"><p id = "output"></p></div><br>
+            </div>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+    <script>
+        function responseString() {
+            var input = document.getElementById("inputString").value;
+            fetch('/model', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({string: input})
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.responseString);
+                document.getElementById("output").innerText = data.responseString;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

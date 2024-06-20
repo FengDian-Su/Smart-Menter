@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+  
+.titlebar {
+    display: flex;
+    height: 120px;
+    width: 100%;
+}
+
+.title-info {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30px;
+}
+
+.select select:hover {
+    cursor: pointer;
+}
+
+.select select option {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    color: #d4d4d4;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid #d8d8d8;
+}
+
+.date-selector {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(63, 191, 255);
+    margin-left: 24px;
+    border: none;
+    text-align: center;
+}
+
+.unit {
+    display: flex;
+    width: 150px;
+    margin-left: 40px;
+    border-radius: 50px;
+    border: 2px solid #d8d8d8;
+}
+
+.unit-selector {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(63, 191, 255);
+    border: none;
+    margin-left: 24px;
+    margin-right: 24px;
+    
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+}
+
+#plug {
+    padding: 30px;
+}
+
+.plug-icon {
+    position: absolute;
+    top: 327px;
+    left: 484px;
+    z-index: 1;
+}
+
+#trend {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.trend-icon {
+    position: absolute;
+    top: 183px;
+    left: 53px;
+    z-index: 1;
+}
+
+.total {
+    width: 400px;
+    height: 105px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#realtime {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.power-icon {
+    position: absolute;
+    top: 47px;
+    left: 482px;
+    z-index: 1;
+}
+
+.charge-title {
+    font-size: 17.7px;
+    font-weight: bold;
+    position: absolute;
+    top: 28px;
+    left: 85px;
+}
+
+.charge-icon {
+    position: absolute;
+    top: 46px;
+    left: 53px;
+    z-index: 1;
+}
+
+.charge-content {
+    display: flex;
+}
+
+#charge {
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    left: 85px;
+    color:rgb(38, 150, 205);
+}
+
+.charge-unit {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 88px;
+    left: 170px;
+}
+
+.llm {
+    position: absolute;
+    top: 30px;
+    left: 900px;
+    width: 580px;
+    height: 530px;
+    border-radius: 10px;
+    /* background-color: #123456; */
+    align-items: center;
+}
+
+input[type = "text"] {
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 400px;
+    height: 30px;
+    font-size: 14px;
+    padding: 4px 15px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.send-btn {
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 70px;
+    border: 2px solid #ccc;
+    height: 40px;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+}
+
+.output {
+    margin-top: 30px;
+    width: 520px;
+    max-height: 355px;
+    min-height: 30px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    overflow: auto;
+}
+.output p {
+    font-size: 16px;
+    white-space: pre-wrap;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0px 15px;
+    margin-left: 5px;
+    line-height: 2;
+    color:rgb(255, 255, 255);
+}
+
+.output::-webkit-scrollbar {
+    width: 1px;
+}
+
+.llm-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    color:rgb(228, 246, 255);
+}
+
+.llm-btn {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.llm-btn button {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 2px solid #ccc;
+}
+
+.llm-btn button:hover {
+    border-color: rgb(121, 194, 230);
+    cursor: pointer;
+}
