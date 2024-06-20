@@ -1,2 +1,2 @@
 # Smart-Menter
-結合物聯網、數據分析、生成式 AI 實作家庭智慧電量管理系統
+響應聯合國永續發展目標之 SDG-7 (Affordable and Clean Energy)，實作一套
