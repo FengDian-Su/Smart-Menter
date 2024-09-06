@@ -26,10 +26,11 @@
 | static/script.js                           | 響應事件及連接前後端資料傳輸                                    |
 
 ## Demo
-- 模擬成果展示<br>
-  <img src = "https://github.com/FengDian-Su/Smart-Menter/blob/main/Image/Demo1.png" width = "450px">
-- 前端網頁展示<br>
-  <img src = "https://github.com/FengDian-Su/Smart-Menter/blob/main/Image/Demo2.png" width = "450px">
+- **模擬成果展示**<br><br>
+  <img src = "https://github.com/FengDian-Su/Smart-Menter/blob/main/Image/Demo1.png" width = "450px"><br>
+
+- **前端網頁展示**<br><br>
+  <img src = "https://github.com/FengDian-Su/Smart-Menter/blob/main/Image/Demo2.png" width = "450px"><br>
 
 ## Contributer
 - [baiyanchen8](https://github.com/baiyanchen8)
